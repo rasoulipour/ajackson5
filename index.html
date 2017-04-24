@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The AJAXson 5</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="request-gif.js"></script>
+</head>
+<body>
+  <div class="jumbotron">
+    <h1>The AJAXson 5</h1>
+
+    <form id="form-gif-request" />
+        <label>What kind of Jackson 5 related gif do you want?</label>
+        <input id = "inputPhrase" name="tag" type="text"/>
+        <br>
+        <br>
+
+        <input id = "humantest" name="test" type="text"/>
+        <label>jacksons are better than 1!</label>
+
+        <input type="submit" class="btn btn-primary btn-lg" value="Get my Gif!" />
+
+        <p id="testerror" style="color:'red';"></p>
+    </form>
+
+    <img id="gif" src=""/>
+    <p id="feedback" hidden="true"></p>
+
+    <div id='loadingmessage' hidden="true">
+      <p>Loading...</p>
+    </div>
+
+  </div>
+
+</body>
+</html>
